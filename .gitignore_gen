@@ -1,0 +1,6 @@
+#!/usr/bin/env bash -eu 
+cd "${0%/*}" && exec > .gitignore
+gibo osx
+gibo linux
+gibo Xcode
+gibo swift
