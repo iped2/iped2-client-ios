@@ -487,6 +487,7 @@
 				BA30A3021C68F46D00CCB540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA30A3031C68F46D00CCB540 /* Build configuration list for PBXNativeTarget "iped2Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +496,7 @@
 				BA30A3051C68F46D00CCB540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA30A3061C68F46D00CCB540 /* Build configuration list for PBXNativeTarget "iped2UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +505,7 @@
 				BA30A3081C68F46D00CCB540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YF1-qA-uLN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ミーティング-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="ミーティング" customClass="ViewController" customModule="iped2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,9 +18,99 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="ミーティング" id="fCY-Gf-eWk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1869" y="337"/>
+        </scene>
+        <!--インタビュー-->
+        <scene sceneID="wUr-O6-XiI">
+            <objects>
+                <viewController id="4od-ni-EOj" userLabel="インタビュー" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q4M-B0-lDm"/>
+                        <viewControllerLayoutGuide type="bottom" id="hl6-54-xJN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xrc-Ux-N5L">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="インタビュー" id="tAG-dg-niU"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJp-8g-Fgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869" y="1054"/>
+        </scene>
+        <!--メインTabBar-->
+        <scene sceneID="fng-u5-yOR">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="YF1-qA-uLN" userLabel="メインTabBar" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5Ek-0m-nov">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1iy-Gq-zKL" kind="relationship" relationship="viewControllers" id="djf-F2-czf"/>
+                        <segue destination="4PG-hR-ObO" kind="relationship" relationship="viewControllers" id="sx8-hV-rho"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLp-eu-CyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="457"/>
+        </scene>
+        <!--ミーティングNavigation-->
+        <scene sceneID="lBR-SD-H09">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1iy-Gq-zKL" userLabel="ミーティングNavigation" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ミーティング" image="IconMeeting" id="jLH-c9-Agl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kw3-aH-eB7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12549019607843137" green="0.75294117647058822" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8Ug-Lx-VA6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8eE-Sj-9uI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="337"/>
+        </scene>
+        <!--インタビューNavigation-->
+        <scene sceneID="dmr-4h-LYo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4PG-hR-ObO" userLabel="インタビューNavigation" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="インタビュー" image="IconInterview" id="2V1-J0-90g"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xBX-we-TrF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12549019610000001" green="0.75294117650000003" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4od-ni-EOj" kind="relationship" relationship="rootViewController" id="eSR-f6-u7F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xmc-wf-CAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="1054"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IconInterview" width="25" height="25"/>
+        <image name="IconMeeting" width="25" height="25"/>
+    </resources>
 </document>
